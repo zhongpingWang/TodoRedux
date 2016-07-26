@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+require('./less/app.less')
 
 export default class AddTodo extends Component {
   render() {

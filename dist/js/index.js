@@ -1,46 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
-
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-
-
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
+webpackJsonp([0,1],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -60,7 +18,7 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _reducers = __webpack_require__(201);
+	var _reducers = __webpack_require__(209);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -22704,13 +22662,17 @@
 
 	var _AddTodo2 = _interopRequireDefault(_AddTodo);
 
-	var _TodoList = __webpack_require__(198);
+	var _TodoList = __webpack_require__(203);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
-	var _Footer = __webpack_require__(200);
+	var _Footer = __webpack_require__(205);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
+
+	var _ = __webpack_require__(206);
+
+	var _2 = _interopRequireDefault(_);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22719,6 +22681,10 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	__webpack_require__(207);
+
+	console.log(_2.default);
 
 	var App = function (_Component) {
 	  _inherits(App, _Component);
@@ -22754,7 +22720,13 @@
 	          filter: visibilityFilter,
 	          onFilterChange: function onFilterChange(nextFilter) {
 	            return dispatch((0, _actions.setVisibilityFilter)(nextFilter));
-	          } })
+	          } }),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          '1234'
+	        ),
+	        _react2.default.createElement('img', { src: _2.default })
 	      );
 	    }
 	  }]);
@@ -22867,6 +22839,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	__webpack_require__(198);
+
 	var AddTodo = function (_Component) {
 	  _inherits(AddTodo, _Component);
 
@@ -22916,6 +22890,16 @@
 
 /***/ },
 /* 198 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22932,7 +22916,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Todo = __webpack_require__(199);
+	var _Todo = __webpack_require__(204);
 
 	var _Todo2 = _interopRequireDefault(_Todo);
 
@@ -22987,7 +22971,7 @@
 	};
 
 /***/ },
-/* 199 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23048,7 +23032,7 @@
 	};
 
 /***/ },
-/* 200 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23111,7 +23095,7 @@
 	        this.renderFilter('SHOW_COMPLETED', 'Completed'),
 	        ', ',
 	        this.renderFilter('SHOW_ACTIVE', 'Active'),
-	        '.'
+	        '. 123'
 	      );
 	    }
 	  }]);
@@ -23128,7 +23112,20 @@
 	};
 
 /***/ },
-/* 201 */
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "imgs/2_2349.jpg";
+
+/***/ },
+/* 207 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 208 */,
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23185,4 +23182,4 @@
 	exports.default = todoApp;
 
 /***/ }
-/******/ ]);
+]);

@@ -4,6 +4,11 @@ import { addTodo, completeTodo, setVisibilityFilter, VisibilityFilters } from '.
 import AddTodo from './AddTodo'
 import TodoList from './TodoList'
 import Footer from './Footer'
+require('./less/index.less')
+
+import img from '../images/bg/2.jpg'
+
+ 
 
 class App extends Component {
   render() {
@@ -25,6 +30,8 @@ class App extends Component {
           onFilterChange={nextFilter =>
             dispatch(setVisibilityFilter(nextFilter))
           } />
+          <div>1234</div>
+          <img  style={{width:'100px'}} src={img} />
       </div>
     )
   }
